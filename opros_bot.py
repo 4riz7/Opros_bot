@@ -8,7 +8,7 @@ from telegram.ext.filters import Filters
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 # Инициализация токена бота и экземпляра класса Updater
-TOKEN = '2093573180:AAF66iwNcU5UgI9Sz7YUIwTN1y3l0yX-uEg'
+TOKEN = '0'
 updater = Updater(token=TOKEN, use_context=True)
 
 # Обработчик команды /start
@@ -54,7 +54,7 @@ def admin(update, context):
     password = '227'
 
     # ID чата с администратором
-    admin_chat_id = "1107708377"
+    admin_chat_id = ""
 
     # Проверка пароля
     if context.args and context.args[0] == password:
